@@ -15,7 +15,7 @@ from states.PD import userData
 @dp.message_handler(isPrivate(), commands="start")
 async def form_start(msg: types.Message):
     await msg.answer("🇺🇿Assalomu alaykum Xurmatli mijoz!\nO’zingizga qulay tilni tanlang ☺️: \n\n🇷🇺Здравствуйте Уважаемый клиент!\nВыберите язык, который вам подходит ☺:️", reply_markup=lang)
-    await msg.answer(reply_markup=ReplyKeyboardRemove())
+    await msg.answer("", reply_markup=ReplyKeyboardRemove())
 
 
 @dp.callback_query_handler(text="uzbeklang")
